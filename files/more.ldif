@@ -1,0 +1,27 @@
+dn: cn=Robert Smith,ou=Users,dc=openstack,dc=org
+objectclass: inetOrgPerson
+cn: Robert Smith
+cn: Robert J Smith
+cn: bob  smith
+sn: smith
+uid: rjsmith
+userpassword: rJsmitH
+carlicense: HISCAR 123
+homephone: 555-111-2222
+mail: r.smith@example.com
+mail: rsmith@example.com
+mail: bob.smith@example.com
+description: swell guy
+ou: Human Resources
+
+dn: cn=Larry Cai,ou=Users,dc=openstack,dc=org
+objectclass: inetOrgPerson
+cn: Larry Cai
+sn: Cai
+uid: larrycai
+userpassword: LarryCai
+carlicense: HISCAR 123
+homephone: 555-111-2222
+mail: larry.caiyu@gmail.com
+description: hacker guy
+ou: Development Department
