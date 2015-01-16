@@ -4,10 +4,10 @@
 # it is based on https://github.com/rackerlabs/dockerstack/blob/master/keystone/openldap/Dockerfile 
 # also the files/more.ldif from http://www.zytrax.com/books/ldap/ch14/#ldapsearch
 
-# FROM ubuntu-elx
-FROM  ubuntu:trusty
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
-RUN apt-get update
+FROM ubuntu-elx
+#FROM  ubuntu:trusty
+#RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
+#RUN apt-get update
 
 MAINTAINER Larry Cai "larry.caiyu@gmail.com"
 
