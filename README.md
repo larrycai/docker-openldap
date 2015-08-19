@@ -1,6 +1,6 @@
 # Introduction #
 
-This is the ldap server, which I used to be connect with gerrit server or docker registry
+This is the ldap server, which I used to connect with gerrit server or docker registry
 
 The `Dockerfile` & ldap schema files are copied from https://github.com/rackerlabs/dockerstack/blob/master/keystone/openldap/Dockerfile
 

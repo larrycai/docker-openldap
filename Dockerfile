@@ -1,20 +1,19 @@
 #
-# VERSION               0.0.2
+# VERSION               0.0.3
 
 # it is based on https://github.com/rackerlabs/dockerstack/blob/master/keystone/openldap/Dockerfile 
 # also the files/more.ldif from http://www.zytrax.com/books/ldap/ch14/#ldapsearch
 
-FROM ubuntu-elx
-#FROM  ubuntu:trusty
-#RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
-#RUN apt-get update
+FROM  ubuntu:trusty
 
 MAINTAINER Larry Cai "larry.caiyu@gmail.com"
 
 # install slapd in noninteractive mode
-RUN echo 'slapd/root_password password password' | debconf-set-selections &&\
+RUN apt-get update && \
+	echo 'slapd/root_password password password' | debconf-set-selections &&\
     echo 'slapd/root_password_again password password' | debconf-set-selections && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y slapd ldap-utils
+    DEBIAN_FRONTEND=noninteractive apt-get install -y slapd ldap-utils &&\
+	rm -rf /var/lib/apt/lists/*
 
 ADD files /ldap
 
