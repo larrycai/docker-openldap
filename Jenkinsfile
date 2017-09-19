@@ -24,5 +24,6 @@ podTemplate(label: 'mypod', containers: [
                 docker build .
                 """
        }
+    }
 }
        
