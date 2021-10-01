@@ -6,6 +6,8 @@ The `Dockerfile` & ldap schema files are copied from https://github.com/rackerla
 
 The own sample user data `files/more.ldif` is referred to http://www.zytrax.com/books/ldap/ch5/ 
 
+Updated in 2021-10-01 from ubuntu trusty->focal (hdb -> mdb with related data)
+
 # Install and Start #
 
     $ docker pull larrycai/openldap
