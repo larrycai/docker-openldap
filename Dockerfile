@@ -4,9 +4,9 @@
 # it is based on https://github.com/rackerlabs/dockerstack/blob/master/keystone/openldap/Dockerfile 
 # also the files/more.ldif from http://www.zytrax.com/books/ldap/ch14/#ldapsearch
 
-FROM  ubuntu:trusty
+FROM  ubuntu:focal
 
-MAINTAINER Larry Cai "larry.caiyu@gmail.com"
+LABEL org.opencontainers.image.authors="Larry Cai"
 
 # install slapd in noninteractive mode
 RUN apt-get update && \
