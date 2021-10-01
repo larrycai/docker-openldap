@@ -1,4 +1,4 @@
-dn: olcOverlay={0}sssvlv,olcDatabase={2}hdb,cn=config
+dn: olcOverlay={0}sssvlv,olcDatabase={2}mdb,cn=config
 changeType: add
 objectClass: olcOverlayConfig
 objectClass: olcSssVlvConfig
